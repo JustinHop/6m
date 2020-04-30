@@ -1,0 +1,40 @@
+6m:
+  logging: 10
+  players:
+    catt:
+      add: /home/justin/Profile/bin/castadd
+      next: /home/justin/.local/bin/catt skip
+      pause: /home/justin/.local/bin/catt pause
+      play: /home/justin/.local/bin/catt play
+      status: /home/justin/.local/bin/catt status
+      stop: /home/justin/.local/bin/catt stop
+      toggle: /home/justin/Profile/bin/casttoggle.sh
+      voldown: /home/justin/.local/bin/catt volumedown 5
+      volup: /home/justin/.local/bin/catt volumeup 5
+    mpc:
+      next: /usr/bin/mpc next
+      play: /usr/bin/mpc play
+      prev: /usr/bin/mpc prev
+      status: /usr/bin/mpc
+      stop: /usr/bin/mpc stop
+      toggle: /usr/bin/mpc toggle
+      voldown: /usr/bin/mpc volume -5
+      volup: /usr/bin/mpc volume +5
+    pi-mpv:
+      next: /usr/bin/mpc next
+      play: echo ssh pi play
+      prev: /usr/bin/mpc prev
+      status: /usr/bin/mpc
+      stop: /usr/bin/mpc stop
+      toggle: /usr/bin/mpc toggle
+      voldown: /usr/bin/mpc volume -5
+      volup: /usr/bin/mpc volume +5
+    pi-vlc:
+      pause: /usr/bin/ssh pi playerctl pause
+      play: /usr/bin/ssh pi playerctl play
+      status: /usr/bin/ssh pi playerctl status
+      stop: /usr/bin/ssh pi playerctl stop
+      toggle: /usr/bin/ssh pi playerctl play-pause
+      voldown: /usr/bin/ssh pi playerctl volume 0.05-
+      volup: /usr/bin/ssh pi playerctl volume 0.05+
+  selected: catt
