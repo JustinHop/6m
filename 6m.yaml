@@ -8,7 +8,7 @@
       play: /home/justin/.local/bin/catt play
       status: /home/justin/.local/bin/catt status
       stop: /home/justin/.local/bin/catt stop
-      toggle: /home/justin/Profile/bin/casttoggle.sh
+      toggle: /home/justin/.local/bin/catt play_toggle
       voldown: /home/justin/.local/bin/catt volumedown 5
       volup: /home/justin/.local/bin/catt volumeup 5
     mpc:
